@@ -81,3 +81,8 @@ https://cdnjs.com/
 https://bootswatch.com/
 
 http://localhost:3000/
+
+# intresting react
+<!-- <Product product={product}/> --> this is in the HomeScreen
+and this could be used in the Product component
+<!-- {/* {props.product} this is one way to call the props from the wherever it's being refered to */} -->
