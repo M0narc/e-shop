@@ -86,3 +86,6 @@ http://localhost:3000/
 <!-- <Product product={product}/> --> this is in the HomeScreen
 and this could be used in the Product component
 <!-- {/* {props.product} this is one way to call the props from the wherever it's being refered to */} -->
+
+# react extension I'm using to speed ti
+https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js-snippets
