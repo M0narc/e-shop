@@ -83,9 +83,21 @@ https://bootswatch.com/
 http://localhost:3000/
 
 # intresting react
-<!-- <Product product={product}/> --> this is in the HomeScreen
+
+`<Product product={product}` -->'' this is in the HomeScreen
 and this could be used in the Product component
-<!-- {/* {props.product} this is one way to call the props from the wherever it's being refered to */} -->
+`{props.product}` this is one way to call the props from the wherever it's being refered to 
 
 # react extension I'm using to speed ti
 https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js-snippets
+
+- `rfce`
+
+
+# improvements to be done
+- fix the `Rating` component to have just one span if posible with iterating stars
+  it makes no sense to copy paste the code, when I can have a dictionary with the name of each 
+  className writen properly
+
+- Again, for the `Rating` component, create a constants.js if not already created and put the classNames 
+  for the star there

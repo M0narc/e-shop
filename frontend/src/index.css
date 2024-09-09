@@ -15,3 +15,16 @@ code {
 main{
   min-height: 80vh;
 }
+
+/* TODO, this shit looks wack, but I might look into it again */
+/* h3 {
+  padding: 1rem 0;
+} */
+
+/* 0.1rem is a CSS unit that stands for "0.1 root em."
+by default the rem is 16px
+ -> 0.1rem = 0.1 * 16px = 1.6px
+ */
+.rating span {
+  margin: 0.1rem;
+}
