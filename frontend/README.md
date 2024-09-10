@@ -84,6 +84,9 @@ http://localhost:3000/
 
 # intresting react
 
+in order to use some propr you need to import
+`useParams`unlike older versions
+
 `<Product product={product}` -->'' this is in the HomeScreen
 and this could be used in the Product component
 `{props.product}` this is one way to call the props from the wherever it's being refered to 
@@ -99,6 +102,15 @@ https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js
 
 
 # improvements to be done
+
+- INSTALL THE NPM PACKAGE FOR FONTAWESOME
+  npm install @fortawesome/fontawesome-free
+
+- Import Font Awesome in your index.js or App.js (have to try both):
+  import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
 - fix the `Rating` component to have just one span if posible with iterating stars
   it makes no sense to copy paste the code, when I can have a dictionary with the name of each 
   className writen properly
