@@ -21,6 +21,17 @@ main{
   padding: 1rem 0;
 } */
 
+.prod-screen-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.prod-screen-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
 /* 0.1rem is a CSS unit that stands for "0.1 root em."
 by default the rem is 16px
  -> 0.1rem = 0.1 * 16px = 1.6px

@@ -13,9 +13,8 @@ function ProductScreen({ match }) {
 
   return (
     <div>
-      <Link 
-      to='/' 
-      className='btn btn-light my-3'>Go back</Link>
+      <Link to='/' className='btn prod-screen-btn my-3'>
+        <i className='fas fa-arrow-left'></i> Go back</Link>
       <Row>
         <Col md={6}>
           <Image src={product.image} alt={product.name} fluid/>
