@@ -88,9 +88,13 @@ http://localhost:3000/
 and this could be used in the Product component
 `{props.product}` this is one way to call the props from the wherever it's being refered to 
 
+this is Route, it takes a path and a component for the hyperlinks
+`<Route path='/' Component={HomeScreen}/>` 
+
 # react extension I'm using to speed ti
 https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js-snippets
 
+- `imd` or `imp`
 - `rfce`
 
 
