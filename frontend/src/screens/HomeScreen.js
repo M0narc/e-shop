@@ -9,7 +9,7 @@ function HomeScreen() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    console.log('Use Effect triggered')
+    axios.get('')
   }, [])
 
   return (
