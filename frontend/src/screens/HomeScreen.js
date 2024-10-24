@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
+
 import products from '../product'
+import axios from 'axios'
 
 function HomeScreen() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    console.log('Use Effect triggered')
+  }, [])
+
   return (
     <div>
       <h1>Lates products</h1>
