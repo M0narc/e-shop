@@ -24,3 +24,8 @@ http://127.0.0.1:8000/api/
 you must have installed NPM
 do an `npm install`
 then `npm start`
+
+
+# TODO
+Zoom to images in the Home Pages
+AGREGAR TODAS LAS APPS A SETTINGS

@@ -1,4 +1,5 @@
-const products = [
+// gonna leave this here as an example lol
+ const products = [
     {
       '_id': '1',
       'name': 'Airpods Wireless Bluetooth Headphones',

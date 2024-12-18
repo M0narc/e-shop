@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # my apps
     'base.apps.BaseConfig',
+    'products.apps.ProductsConfig',
+    'orders.apps.OrdersConfig',
+    'reviews.apps.ReviewsConfig',
+    'shipping_address.apps.ShippingAddressConfig',
     #third party
     'rest_framework',
     'corsheaders'
@@ -122,15 +126,32 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_BASE_DIR = BASE_DIR / "static"
+
+# source for python manage.py collectstatic
+STATICFILES_DIRS =[
+    STATICFILES_BASE_DIR
+]
+
+STATIC_ROOT = BASE_DIR.parent / "local-static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Media files
+MEDIA_URL = '/images/'
+MEDIA_ROOT = 'static/images'
+
+# login de usuarios
+LOGIN_URL = "/auth/login"
+
 
 # allowed host that can communicate with us, we can change this later
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000'
     ]
+
+AUTH_USER_MODEL = 'base.CustomUser'
