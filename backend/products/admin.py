@@ -31,7 +31,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     fieldsets = (
         ('Basic Information', {
-            'fields': ('name', 'brand', 'category', 'description', 'user')
+            'fields': ('name', 'brand', 'category', 'description', 'user', 'image')
         }),
         ('Stock & Pricing', {
             'fields': ('price', 'count_in_stock')

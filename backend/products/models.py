@@ -6,8 +6,6 @@ class Product(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True) 
     name =  models.CharField(max_length=200, null=True, blank=True)
     image = models.ImageField(
-        upload_to="products/",
-        default="products/default_product.png",
         null=True,
         blank=True
     )
@@ -28,4 +26,3 @@ class Product(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
-    
