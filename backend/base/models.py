@@ -1,4 +1,3 @@
-from datetime import timezone
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -6,7 +5,12 @@ class CustomUser(AbstractUser):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     email = models.EmailField(unique=True)
-    date_joined = date_joined = models.DateTimeField(auto_now_add=True)
+    phone_number = models.CharField(
+        max_length=15, 
+        blank=True, 
+        null=True
+    )
+    date_joined = models.DateTimeField(auto_now_add=True)
     date_update = models.DateTimeField(auto_now=True)
     avatar = models.ImageField(upload_to='avatars/',
                                default='default_avatars/default_avatar.png',
@@ -28,6 +32,3 @@ class CustomUser(AbstractUser):
         help_text='Specific permissions for this user.',
         verbose_name='user permissions'
     )
-
-    def __str__(self):
-        return self.get_full_name

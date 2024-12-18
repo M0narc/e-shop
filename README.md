@@ -28,3 +28,4 @@ then `npm start`
 
 # TODO
 Zoom to images in the Home Pages
+AGREGAR TODAS LAS APPS A SETTINGS

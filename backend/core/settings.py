@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # my apps
     'base.apps.BaseConfig',
+    'products.apps.ProductsConfig',
+    'orders.apps.OrdersConfig',
+    'reviews.apps.ReviewsConfig',
+    'shipping_address.apps.ShippingAddressConfig',
     #third party
     'rest_framework',
     'corsheaders'
@@ -149,3 +153,5 @@ LOGIN_URL = "/auth/login"
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000'
     ]
+
+AUTH_USER_MODEL = 'base.CustomUser'
