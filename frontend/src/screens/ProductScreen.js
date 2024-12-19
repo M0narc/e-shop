@@ -41,7 +41,7 @@ function ProductScreen({ match }) {
             <ListGroup.Item>
               <Rating 
               value={product.rating} 
-              text={`${product.numReviews} reviews`} 
+              text={`${product.num_reviews} reviews`} 
               color={'#f8e825'}/>
             </ListGroup.Item>
             <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
@@ -64,7 +64,7 @@ function ProductScreen({ match }) {
                 <Row>
                   <Col>Status:</Col>
                   <Col>
-                    {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'} 
+                    {product.count_in_stock > 0 ? 'In Stock' : 'Out of Stock'} 
                   </Col>
                 </Row>
               </ListGroup.Item>
@@ -72,7 +72,7 @@ function ProductScreen({ match }) {
                 <Button 
                 className='btn-block w-100' 
                 type='button' 
-                disabled={product.countInStock === 0}>Add to Cart</Button>
+                disabled={product.count_in_stock === 0}>Add to Cart</Button>
               </ListGroup.Item>
             </ListGroup>
           </Card>
